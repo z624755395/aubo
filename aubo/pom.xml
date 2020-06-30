@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>12345</groupId>
+  <artifactId>aubo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+ 	
+ 	
+ 	
+ 	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>1.7</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties> 
+ 	 
+  	<build>
+        <plugins>
+		
+			
+	<plugin>
+	<artifactId>maven-assembly-plugin</artifactId>
+	<executions>
+		<execution>
+			<phase>package</phase>
+			<goals>
+				<goal>single</goal>
+			</goals>
+		</execution>
+	</executions>
+	<configuration>
+		<descriptorRefs>
+			<descriptorRef>jar-with-dependencies</descriptorRef>
+		</descriptorRefs>
+		<archive>
+			<manifest>
+				<mainClass>aubo.AASstart</mainClass>
+			</manifest>
+		</archive>
+	</configuration>
+	</plugin>
+
+        </plugins>
+    </build>
+	
+	<repositories>
+    	<repository>
+        	<id>Eclipse Paho Repo</id>
+        	<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+    	</repository>
+    	
+    	
+  <repository>
+    <id>bintray</id>
+    <url>https://jcenter.bintray.com</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </repository>
+
+    	
+	</repositories>		
+	
+	
+    <dependencies>
+        
+   		<dependency>
+        	<groupId>org.eclipse.paho</groupId>
+        	<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+        	<version>1.2.0</version>
+    	</dependency>
+   		
+   		<dependency>
+			<groupId>org.fusesource.mqtt-client</groupId>
+			<artifactId>mqtt-client</artifactId>
+			<version>1.0</version>
+		</dependency>
+   		
+
+   	
+        <dependency>
+            <groupId>org.eclipse.basyx</groupId>
+            <artifactId>basyx.sdk</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+       
+        </dependency>
+   		
+   		<dependency>
+            <groupId>org.eclipse.basyx</groupId>
+            <artifactId>basyx.components</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+       
+        </dependency>
+        
+        
+    
+		
+ 	 </dependencies>
+  
+  
+  
+</project>

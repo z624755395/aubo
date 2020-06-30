@@ -1,0 +1,8 @@
+aubo\Aubo.class
+aubo\AuboOperation.class
+aubo\TCPClient.class
+aubo\AuboControlComponent.class
+aubo\PositionValue.class
+aubo\SensorSubModel.class
+aubo\ControlSubModel.class
+aubo\AASstart.class
