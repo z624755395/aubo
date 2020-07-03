@@ -7,7 +7,7 @@ This project implements some necessary Industry 4.0 components to integrate a au
 - [Install](#install)
 - [Usage](#usage)
 - [Simulate](#simulate)
-- [TCP connection](#TCP connection)
+- [TCPconnection](#TCPconnection)
 
 
 ## Background
@@ -25,6 +25,6 @@ The documentation of Eclipse Basyx: https://wiki.eclipse.org/BaSyx
 It is suggested to use Node-RED to make an HTTP request.
 Node-RED documentation: https://nodered.org/
 aubo.json file is for Node-RED 
-### TCP connection
+### TCPconnection
 Modify the TCP server address in TCPClient.java in order to connect to a remote TCP server
 
