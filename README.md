@@ -7,8 +7,8 @@ This project implements some necessary Industry 4.0 components to integrate a au
 - [Install](#install)
 - [Usage](#usage)
 - [Simulate](#simulate)
-- [Contributing](#contributing)
-- [License](#license)
+- [TCP cpnnection](#TCP connection)
+
 
 ## Background
 In this project, Eclipse Basyx SDK is used.
