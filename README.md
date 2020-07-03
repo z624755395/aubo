@@ -7,7 +7,7 @@ This project implements some necessary Industry 4.0 components to integrate a au
 - [Install](#install)
 - [Usage](#usage)
 - [Simulate](#simulate)
-- [TCP cpnnection](#TCP connection)
+- [TCP connection](#TCP connection)
 
 
 ## Background
